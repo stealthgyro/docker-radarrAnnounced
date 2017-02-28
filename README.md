@@ -1,3 +1,9 @@
+THIS CURRENTLY DOES NOT WORK. THE settings.cfg file has to be edited manually
+docker exec -it sonarrannounced bash
+vi settings.cfg
+#add a tracker and change your settings.
+
+
 [linuxserverurl]: https://linuxserver.io
 [forumurl]: https://forum.linuxserver.io
 [ircurl]: https://www.linuxserver.io/irc/
