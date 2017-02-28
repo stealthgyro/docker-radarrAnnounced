@@ -9,8 +9,8 @@ mkdir -p \
 	git clone https://github.com/l3uddz/sonarrAnnounced /app/sonarrannounced
 	pip3 install -r /app/sonarrannounced/requirements.txt
 	if [ ! -f /app/sonarrannounced/settings.cfg ]; then
-    cp /app/sonarrannounced/settings.cfg.default /app/sonarrannounced/settings.cfg
-fi
+		cp /app/sonarrannounced/settings.cfg.default /app/sonarrannounced/settings.cfg
+	fi
 
 # permissions
 chown -R abc:abc \
