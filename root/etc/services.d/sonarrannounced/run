@@ -2,5 +2,7 @@
 
 umask 022
 
+cd /config
+
 exec \
 	s6-setuidgid abc /usr/bin/python3.5 /app/sonarrannounced/bot.py
