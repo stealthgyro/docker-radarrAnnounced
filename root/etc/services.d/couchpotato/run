@@ -3,5 +3,5 @@
 umask 022
 
 exec \
-	s6-setuidgid abc python /app/couchpotato/CouchPotato.py \
-	--config_file=/config/config.ini --data_dir=/config/data
+	s6-setuidgid abc python /app/sonarrannounced/bot.py \
+	--config_file=/config/settings.cfg --data_dir=/config/data

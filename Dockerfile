@@ -8,6 +8,6 @@ ENV PYTHONIOENCODING="UTF-8"
 COPY root/ /
 
 # ports and volumes
-EXPOSE 5050
-WORKDIR /app/couchpotato
-VOLUME /config /downloads /movies
+EXPOSE 3467
+WORKDIR /app/sonarrannounced
+VOLUME /config /logs
