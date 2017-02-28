@@ -3,5 +3,4 @@
 umask 022
 
 exec \
-	s6-setuidgid abc python3 /app/sonarrannounced/bot.py \
-	--config_file=/config/settings.cfg --data_dir=/config/data
+	s6-setuidgid abc python3 /app/sonarrannounced/bot.py
