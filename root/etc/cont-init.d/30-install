@@ -7,6 +7,7 @@ mkdir -p \
 # install app
 [[ ! -d "/app/sonarrAnnounced/.git" ]] && \
 	git clone https://github.com/l3uddz/sonarrAnnounced /app/sonarrannounced
+	pip3.5 install -r /app/sonarrannounced/requirements.txt
 
 # permissions
 chown -R abc:abc \
