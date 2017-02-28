@@ -5,7 +5,7 @@ mkdir -p \
 	/var/log/sonarrannounced
 
 # install app
-[[ ! -d "/app/sonarrAnnounced/.git" ]] && \
+[[ ! -d "/app/sonarrannounced/.git" ]] && \
 	git clone https://github.com/l3uddz/sonarrAnnounced /app/sonarrannounced
 	pip3 install -r /app/sonarrannounced/requirements.txt
 	if [ ! -f /app/sonarrannounced/settings.cfg ]; then
