@@ -3,4 +3,4 @@
 umask 022
 
 exec \
-	s6-setuidgid abc python3 /app/sonarrannounced/bot.py
+	s6-setuidgid abc python3.5 /app/sonarrannounced/bot.py
