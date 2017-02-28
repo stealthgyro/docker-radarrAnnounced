@@ -67,12 +67,4 @@ Access the webui at `<your-ip>:3467`, for more information check out [sonarranno
 
 ## Version Log
 
-+ **07.02.17:** Rebase to alpine 3.5. 
-+ **11.11.16:** Stop cp logging to docker log (they are accessible in the webui and the config folder)
-+ **30.09.16:** Fix umask.
-+ **09.09.16:** Add layer badges to README
-+ **27.08.16:** Add badges to README
-+ **08.08.16:** Rebase to alpine linux
-+ **12.11.15:** Misc Code Cleanup
-+ **02.10.15:** Change to python baseimage. 
-+ **28.07.15:** Updated to latest baseimage (for testing), and a fix to autoupdate. 
++ **2017-02-28:** initial 
