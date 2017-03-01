@@ -6,9 +6,9 @@ This is still very much in development and still in active testing.
 2. you will need to have at least on tracker configured in the settings.cfg before it will work
 3. after the edit you might need to do a docker restart.
 4. important files to keep
-settings.cfg
-brain.db
-status.log
++settings.cfg
++brain.db
++status.log
 
 if there are issues with updating, just delete all files except those.
 
