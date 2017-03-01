@@ -7,7 +7,8 @@ mkdir -p \
 # install app
  [[ ! -d "/config/temp/.git" ]] && \
 	git clone https://github.com/l3uddz/sonarrAnnounced /config/temp
-	mv -u /config/temp/* /config
+	#mv -fu /config/temp/* /config
+	tar cf - /config/temp |(cd /config; tar xvf -)
 	rm -rf /config/temp
 	pip3 install -r /config/requirements.txt
 	if [ ! -f /config/settings.cfg ]; then
