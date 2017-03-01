@@ -22,7 +22,7 @@ mkdir -p \
 
 # permissions
 chown -R abc:abc \
-	/app
+	/config
 
 chmod 777 \
 	/var/log/sonarrannounced
