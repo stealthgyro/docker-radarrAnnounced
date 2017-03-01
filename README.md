@@ -1,28 +1,9 @@
-THIS CURRENTLY DOES NOT WORK. THE settings.cfg file has to be edited manually
-docker exec -it sonarrannounced bash
-vi settings.cfg
-#add a tracker and change your settings.
+The way somethings are hardcoded you will want to make sure to have a settings.cfg in your /config volume, which will also include the python scripts for the trackers.
+
+This is still very much in development and still in active testing.
 
 
-[linuxserverurl]: https://linuxserver.io
-[forumurl]: https://forum.linuxserver.io
-[ircurl]: https://www.linuxserver.io/irc/
-[podcasturl]: https://www.linuxserver.io/podcast/
-
-[![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)][linuxserverurl]
-
-The [LinuxServer.io][linuxserverurl] team brings you another container release featuring easy user mapping and community support. Find us for support at:
-* [forum.linuxserver.io][forumurl]
-* [IRC][ircurl] on freenode at `#linuxserver.io`
-* [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
-
-# stealthgyro/sonarrannounced
-
-
-[![](https://images.microbadger.com/badges/image/linuxserver/sonarrannounced.svg)](http://microbadger.com/images/linuxserver/sonarrannounced "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/sonarrannounced.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/sonarrannounced.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-hub-built/linuxserver-sonarrannounced)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-hub-built/job/linuxserver-sonarrannounced/)
-[hub]: https://hub.docker.com/r/linuxserver/sonarrannounced/
-
-[sonarrannounced](https://github.com/l3uddz/sonarrAnnounced) is an automatic NZB and torrent downloader. You can keep a "movies I want" list and it will search for NZBs/torrents of these movies every X hours. Once a movie is found, it will send it to SABnzbd or download the torrent to a specified directory.
+[sonarrannounced](https://github.com/l3uddz/sonarrAnnounced) Python script to notify sonarr of tracker announcements from IRC announce channels.
 
 
 ## Usage
