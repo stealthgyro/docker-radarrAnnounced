@@ -11,6 +11,9 @@ mkdir -p \
 	if [ ! -f /config/settings.cfg ]; then
 		cp /app/sonarrannounced/settings.cfg.default /config/settings.cfg
 	fi
+	if [ ! -f /config/trackers]; then
+		cp /app/sonarrannounced/trackers /config/trackers
+	fi
 
 # permissions
 chown -R abc:abc \
