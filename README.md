@@ -2,6 +2,12 @@ The way somethings are hardcoded you will want to make sure to have a settings.c
 
 This is still very much in development and still in active testing.
 
+1. After the initial run, a settings.cfg file will be in your /config volume
+2. Edit this with at least one tracker to have the page load where you can do the rest of the configuration in the webUI.
+3. Due to the way some of the python was written in sonarrAnnounced, there wasn't any environment variables, so some files are copied to /config volume for full functionality.
+4. This includes trackers folder, template folder, status.log ... Now I check if the folders exist but not the contents so that would be a quick way to break it delete the folder contents.
+5. hope this helps.
+
 
 [sonarrannounced](https://github.com/l3uddz/sonarrAnnounced) Python script to notify sonarr of tracker announcements from IRC announce channels.
 
