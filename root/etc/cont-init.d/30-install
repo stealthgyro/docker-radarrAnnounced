@@ -5,18 +5,18 @@ mkdir -p \
 	/var/log/sonarrannounced
 
 # install app
-[[ ! -d "/app/sonarrannounced/.git" ]] && \
-	git clone https://github.com/l3uddz/sonarrAnnounced /app/sonarrannounced
-	pip3 install -r /app/sonarrannounced/requirements.txt
+[[ ! -d "/config/.git" ]] && \
+	git clone https://github.com/l3uddz/sonarrAnnounced /config
+	pip3 install -r /config/requirements.txt
 	if [ ! -f /config/settings.cfg ]; then
-		cp /app/sonarrannounced/settings.cfg.default /config/settings.cfg
+		cp /config/settings.cfg.default /config/settings.cfg
 	fi
-	if [ ! -d /config/trackers ]; then
-		cp -r /app/sonarrannounced/trackers /config/trackers
-	fi
-	if [ ! -d /config/templates ]; then
-		cp -r /app/sonarrannounced/templates /config/templates
-	fi
+	# if [ ! -d /config/trackers ]; then
+	# 	cp -r /app/sonarrannounced/trackers /config/trackers
+	# fi
+	# if [ ! -d /config/templates ]; then
+	# 	cp -r /app/sonarrannounced/templates /config/templates
+	# fi
 
 # permissions
 chown -R abc:abc \

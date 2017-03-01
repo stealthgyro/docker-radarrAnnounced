@@ -15,5 +15,5 @@ COPY root/ /
 
 # ports and volumes
 EXPOSE 3467
-WORKDIR /app/sonarrannounced
+WORKDIR /config
 VOLUME /config /logs
