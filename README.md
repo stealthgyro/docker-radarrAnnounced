@@ -15,19 +15,19 @@ if there are issues with updating, just delete all files except those.
 
 
 
-[sonarrannounced](https://github.com/l3uddz/sonarrAnnounced) Python script to notify sonarr of tracker announcements from IRC announce channels.
+[radarrAnnounced](https://github.com/stealthgyro/radarrAnnounced) Python script to notify radarr of tracker announcements from IRC announce channels.
 
 
 ## Usage
 
 ```
 docker create \
-	--name=sonarrannounced \
+	--name=radarrannounced \
 	-v <path to data>:/config \
 	-e PGID=<gid> -e PUID=<uid>  \
 	-e TZ=<timezone> \
 	-p 3467:3467 \
-	stealthgyro/docker-sonarrannounced
+	stealthgyro/docker-radarrAnnounced
 ```
 
 ## Parameters
@@ -39,12 +39,12 @@ http://192.168.x.x:8080 would show you what's running INSIDE the container on po
 
 
 * `-p 3467` - the port(s)
-* `-v /config` - sonarrannounced Application Data
+* `-v /config` - radarrannounced Application Data
 * `-e PGID` for for GroupID - see below for explanation
 * `-e PUID` for for UserID - see below for explanation
 * `-e TZ` for timezone information, eg Europe/London
 
-It is based on alpine-linux with S6 overlay, for shell access whilst the container is running do `docker exec -it sonarrannounced /bin/bash`.
+It is based on alpine-linux with S6 overlay, for shell access whilst the container is running do `docker exec -it radarrannounced /bin/bash`.
 
 ### User / Group Identifiers
 
@@ -58,11 +58,11 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 ```
 
 ## Setting up the application
-Access the webui at `<your-ip>:3467`, for more information check out [sonarrannounced](https://github.com/l3uddz/sonarrAnnounced).
+Access the webui at `<your-ip>:3467`, for more information check out [radarrannounced](https://github.com/stealthgyro/radarrAnnounced).
 
 ## Info
 
-* To monitor the logs of the container in realtime `docker logs -f sonarrannounced`.
+* To monitor the logs of the container in realtime `docker logs -f radarrannounced`.
 
 ## Version Log
 

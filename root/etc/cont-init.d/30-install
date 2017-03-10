@@ -2,11 +2,11 @@
 
 # create folders
 mkdir -p \
-	/var/log/sonarrannounced
+	/var/log/radarrannounced
 
 # install app
  [[ ! -d "/config/temp/.git" ]] && \
-	git clone https://github.com/l3uddz/sonarrAnnounced /config/temp
+	git clone https://github.com/stealthgyro/radarrAnnounced /config/temp
 	cp -r /config/temp/* /config
 	rm -rf /config/temp
 	pip3 install -r /config/requirements.txt
@@ -14,10 +14,10 @@ mkdir -p \
 		cp /config/settings.cfg.default /config/settings.cfg
 	fi
 	# if [ ! -d /config/trackers ]; then
-	# 	cp -r /app/sonarrannounced/trackers /config/trackers
+	# 	cp -r /app/radarrannounced/trackers /config/trackers
 	# fi
 	# if [ ! -d /config/templates ]; then
-	# 	cp -r /app/sonarrannounced/templates /config/templates
+	# 	cp -r /app/radarrannounced/templates /config/templates
 	# fi
 
 # permissions
@@ -25,4 +25,4 @@ chown -R abc:abc \
 	/config
 
 chmod 777 \
-	/var/log/sonarrannounced
+	/var/log/radarrannounced
